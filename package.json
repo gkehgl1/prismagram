@@ -1,0 +1,28 @@
+{
+  "name": "prismagram",
+  "version": "1.0.0",
+  "description": "instagram clone with Express + Prisma + React and React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkehgl1/prismagram.git"
+  },
+  "author": "한동희",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkehgl1/prismagram/issues"
+  },
+  "homepage": "https://github.com/gkehgl1/prismagram#readme",
+  "dependencies": {
+    "babel-node": "0.0.1-security",
+    "graphql-yoga": "^1.18.3",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "nodemon": "^1.19.2"
+  }
+}
