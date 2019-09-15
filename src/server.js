@@ -4,11 +4,16 @@ import logger from "morgan";
 
 const PORT = process.env.PORT || 4000;
 
-const typeDefs = `type Query{hello: String!}`;
+const typeDefs = `
+    type Query{
+        hello: String!
+    }
+`;
 
 const resolvers = {
     Query: {
         hello: () => "Hi"
+        
     }
 };
 

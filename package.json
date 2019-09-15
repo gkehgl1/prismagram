@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "dev" : "nodemon --exec babel-node src/server.js"
+=======
+    "dev": "nodemon --exec babel-node src/server.js",
+    "deploy": "prisma deploy"
+>>>>>>> prisma followers & following
   },
   "repository": {
     "type": "git",
@@ -18,8 +23,16 @@
   },
   "homepage": "https://github.com/gkehgl1/prismagram#readme",
   "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
     "babel-node": "0.0.1-security",
     "dotenv": "^8.1.0",
+<<<<<<< HEAD
+=======
+    "eslint-config-defaults": "^9.0.0",
+    "eslint-plugin-react": "^7.14.3",
+>>>>>>> prisma followers & following
     "graphql-yoga": "^1.18.3",
     "morgan": "^1.9.1"
   },
