@@ -4,7 +4,7 @@ import sgTransport from "nodemailer-sendgrid-transport";
 import dotenv from "dotenv"
 import path from "path";
 dotenv.config({path: path.resolve(__dirname, ".env")});
-
+import jwt from "jsonwebtoken"
 
 export const generateSecret = () => {
   const randomNumber = Math.floor(Math.random() * adjectives.length);
@@ -28,10 +28,12 @@ export const sendSecretMail = (address, secret) => {
     from: "gkehgl2@naver.com",
     to: address,
     subject: "Login Secret for Prismagram",
-    html: `Hello! Your Login secret it ${secret}.<br/>Copy paste on the app to log in`
+    html: `Hello! Your Login secret is <strong>${secret}</strong>.<br/>Copy paste on the app to log in`
   };
   return sendMail(email);
-}
+};
+
+export const generateToken = (id) => jwt.sign({ id }, process.env.JWT_SECRET);
 
 
 
