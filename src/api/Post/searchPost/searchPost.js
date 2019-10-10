@@ -2,7 +2,7 @@ import { prisma } from "../../../../generated/prisma-client";
 
 export default {
   Query:{
-    searchPost: async(_, args) => 
+    searchPost: (_, args) => 
       prisma.posts({
         where:
         {OR:[

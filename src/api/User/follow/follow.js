@@ -10,12 +10,13 @@ export default {
       const {user} = request;
       try {
         await prisma.updateUser({ 
-          where : {id: user.id}, data: {
-          following: {
-            connect: {
-              id
+          where : {id: user.id}, 
+          data: {
+            following: {
+              connect: {
+                id
+              }
             }
-          }
         } 
       });
         return true;

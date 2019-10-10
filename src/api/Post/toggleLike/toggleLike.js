@@ -37,12 +37,10 @@ export default {
               }
             }
         });
-        }console.log("hi!");
+        }
         return true;
-        
       } 
       catch {
-        console.log("bye!");
         return false;
       }
     }
